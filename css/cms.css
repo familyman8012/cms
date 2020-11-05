@@ -90,7 +90,11 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 @font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 900; src: url(../fonts/NotoSansKR-Black.woff2) format("woff2"), url(../fonts/NotoSansKR-Black.woff) format("woff"), url(../fonts/NotoSansKR-Black.otf) format("opentype"); }
 
-/*commos*/
+@font-face { font-family: '국민체조'; font-style: normal; font-weight: lighter; src: url(../fonts/210-kookminL.woff) format("woff"), url(../fonts/210-kookminL.otf) format("opentype"); }
+
+@font-face { font-family: '국민체조'; font-style: normal; font-weight: bolder; src: url(../fonts/210-kookminB.woff) format("woff"), url(../fonts/210-kookminB.otf) format("opentype"); }
+
+/*commons*/
 .border_box { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .fl { float: left; }
@@ -118,17 +122,55 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 #head.sub { -webkit-box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22); box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22); }
 
-#cont_main .wrap_product { width: 1220px; margin: 0 auto; }
+.main_vis { position: relative; }
+
+.main_vis .main_vis_txt { position: absolute; left: 350px; top: 138px; }
+
+#cont_main .wrap_product { width: 1250px; margin: 0 auto; }
 
 #cont_main .wrap_product h2 { display: block; margin: 35px 0 62px; font-weight: 500; font-size: 24.5px; letter-spacing: -0.61px; border-bottom: 1px solid #dcdcdc; }
 
-#cont_main .list_product { width: 1220px; margin-bottom: 80px; }
+#cont_main .list_product { width: 1250px; margin-bottom: 80px; overflow: hidden; }
 
-#cont_main .list_product li:nth-child(1), #cont_main .list_product li:nth-child(3) { float: left; }
+#cont_main .list_product li { position: relative; margin: 15px; max-width: 595px; width: 50%; height: 101%; float: left; border: 1px solid #dcdcdc; }
 
-#cont_main .list_product li:nth-child(1), #cont_main .list_product li:nth-child(3) { margin-right: 30px; }
+#cont_main .list_product h3 { padding: 21px 22px 0; font-family: '국민체조', sans-serif; font-weight: bolder; color: #00baff; font-size: 37px; }
 
-#cont_main .list_product li:nth-child(3), #cont_main .list_product li:nth-child(4) { margin-top: 30px; }
+#cont_main .list_product .badge_best { display: block; width: 50px; height: 65px; position: absolute; right: 15px; top: 0; background: url(../images/badge1.png) no-repeat 0 0; }
+
+#cont_main .list_product .badge2 { display: block; width: 50px; height: 65px; position: absolute; right: 15px; top: 0; background: url(../images/badge2.png) no-repeat 0 0; }
+
+#cont_main .list_product img { display: block; margin: 56px auto 20px; }
+
+#cont_main .list_product .product_cont { padding: 0 24px 32px; }
+
+#cont_main .list_product .product_cont .pro_name { font-weight: 700; color: #1a1a1a; letter-spacing: -0.5px; font-size: 20px; }
+
+#cont_main .list_product .product_cont .pro_price { margin-top: 9px; margin-bottom: 18px; font-size: 20px; letter-spacing: -0.5px; font-weight: 700; color: #ae0000; }
+
+#cont_main .list_product .product_cont .pro_price .krwon_txt { font-size: 16px; letter-spacing: -0.4px; font-weight: 300; }
+
+#cont_main .list_product .product_cont .pro_intro { font-size: 16px; font-weight: 300; line-height: 1.48; color: #1a1a1a; }
+
+#cont_main .list_product .warning { height: 68.8%; }
+
+#cont_main .list_product .warning h3 { color: #c43232; letter-spacing: -0.93px; padding-top: 21px; }
+
+#cont_main .list_product .warning .warning_message { padding: 21px 25px 20px; font-size: 20px; font-weight: 500; line-height: 1.8; letter-spacing: -0.5px; color: #1a1a1a; }
+
+#cont_main .list_product .warning .warning_message strong { color: #c43232; }
+
+#cont_main .list_product .warning img { margin-top: 0; margin-bottom: 30px; }
+
+#cont_main .list_product .cscenter { height: 68.8%; background: url(../images/img_product4.png) no-repeat 0 0/cover; }
+
+#cont_main .list_product .cscenter .working { padding: 81px 33px 146px; }
+
+#cont_main .list_product .cscenter .working .tit { padding-bottom: 24px; font-weight: 500; font-size: 28px; letter-spacing: -0.7px; }
+
+#cont_main .list_product .cscenter .working .hour_txt { padding-bottom: 32px; font-size: 16px; line-height: 1.3; }
+
+#cont_main .list_product .cscenter .working .center_nbr { font-family: 'roboto',sans-serif; font-weight: 900; letter-spacing: -1.34px; color: #c43232; font-size: 54px; }
 
 #cont { color: #1a1a1a; }
 
