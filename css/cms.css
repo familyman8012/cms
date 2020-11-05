@@ -391,17 +391,26 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 .wrap_pop.sign3 p { background: url("../images/wrap_pop_sign3.png") no-repeat center top; background-size: 48px 48px; }
 
-@media (max-width: 1119px) { #head, #cont_main, #head h1, #cont_main .wrap_product, .wrap_cms_info, .box_preview .inner, .wrap_cms_use, #footer .inner, .main_vis img, .list_product img, #footer .list_yakwan { width: 100% !important; }
+@media (max-width: 1119px) { #head, #cont_main, #head h1, #cont_main .wrap_product, .wrap_cms_info, .box_preview .inner, .wrap_cms_use, #footer .inner, .main_vis img, #footer .list_yakwan { width: 100% !important; }
   #cont_main .list_product li { margin: 0 !important; }
+  #cont_main .list_product li img { max-width: 100%; }
   #head { height: 50px; }
   #head h1 { line-height: 50px; }
   #head h1 img { height: 19px; }
   .main_vis { height: 156px; background: url("../images/bnr_vis_cms.jpg") no-repeat center center; background-size: cover; }
-  .main_vis img { display: none; }
-  #cont_main .wrap_product h2 { width: 90%; margin: 12px auto 20px; font-size: 18px; }
-  #cont_main .list_product { width: 90%; margin: 0 auto; }
-  #cont_main .list_product li { float: none !important; margin-top: 10px  !important; }
+  .main_vis .main_vis_txt { left: 0; top: 50%; margin-top: -45px; }
+  #cont_main .wrap_product h2 { width: 90%; margin: 12px auto 20px; font-size: 20px; }
+  #cont_main .list_product { width: 90%; margin: 0 auto 50px; }
+  #cont_main .list_product h3 { font-size: 18px; }
+  #cont_main .list_product li { float: none !important; margin-top: 10px  !important; max-width: initial; width: 100%; }
   #cont_main .list_product li:last-child { margin-bottom: 50px; }
+  #cont_main .list_product .cscenter { height: 280px; }
+  #cont_main .list_product .cscenter .working .tit { font-size: 20px; }
+  #cont_main .list_product .cscenter .hour_txt { font-size: 14px; }
+  #cont_main .list_product .cscenter .working .center_nbr { font-size: 30px; }
+  #cont_main .list_product .product_cont .pro_name, #cont_main .list_product .product_cont .pro_price { font-size: 16px; }
+  #cont_main .list_product .product_cont .pro_intro { font-size: 14px; }
+  #cont_main .list_product .warning .warning_message { font-size: 16px; }
   #cont .wrap_cms_info { margin-top: 17px; }
   #cont .txt_info { width: 90%; margin: 0 auto; }
   #cont .total_info { display: block; }

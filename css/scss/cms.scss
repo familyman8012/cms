@@ -358,9 +358,11 @@ overflow:hidden;}
 @media (max-width: 1119px) {
     #head, #cont_main, #head h1, #cont_main .wrap_product, 
      .wrap_cms_info, .box_preview  .inner, 
-     .wrap_cms_use, #footer .inner, .main_vis img,  .list_product img, 
+     .wrap_cms_use, #footer .inner, .main_vis img, 
      #footer .list_yakwan {width:100% !important;}
-     #cont_main .list_product li {margin:0 !important;}
+     #cont_main .list_product li {margin:0 !important;
+        img {max-width:100%;}
+     }
 
      #head {height:50px;
         h1 {line-height:50px; 
@@ -371,18 +373,38 @@ overflow:hidden;}
         height:156px;
         background:url('../images/bnr_vis_cms.jpg') no-repeat center center;
         background-size:cover;
-        img {display:none;}
+        
+        .main_vis_txt {left:0; top:50%; margin-top: -45px;}
     
     }
     #cont_main .wrap_product h2 {
         width:90%;
-        margin:12px auto 20px;font-size:18px;
+        margin:12px auto 20px;font-size:20px;
     }
     #cont_main .list_product {
-        width:90%;margin:0 auto;
+        width:90%;margin:0 auto 50px;
+
+        h3 {font-size: 18px;}
         li {float:none !important;
             margin-top:10px  !important;
+            max-width:initial;
+            width:100%;
             &:last-child{margin-bottom:50px;}
+        }
+
+        .cscenter {height:280px;
+            .working .tit {font-size: 20px;}
+            .hour_txt {font-size: 14px;}
+            .working .center_nbr  {font-size: 30px;}
+        }
+
+        .product_cont {
+            .pro_name, .pro_price {font-size: 16px;}
+            .pro_intro {font-size: 14px;}
+        }
+
+        .warning .warning_message {font-size:16px;
+
         }
     }
     #cont .wrap_cms_info {margin-top:17px;}
