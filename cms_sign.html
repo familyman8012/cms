@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cms.css">
+    <script src="http://play-block.com//js/jquery-3.3.1.min.js"></script>
+    <script src="../js/cms.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+   
+    <div id="head" class="sub">
+        <h1><img src="./images/logo_cms.png" alt="CMS Pro shop" /></h1>
+    </div>
+    <div id="cont" class="cont_form">
+        <div class="wrap_form_agree">
+            <div class="box_agree">
+                <h2>약관동의</h2>
+                <div class="all_agree">
+                    <input type="checkbox" id="allagree">
+                    <label for="allagree">전체동의</label>
+                </div>
+                <ul class="list_yakwan">
+                    <li>
+                        <span class="box_doc">
+                            <input type="checkbox" id="doc1">
+                            <label for="doc1">전자상거래 이용 약관</label>
+                        </span>
+                        <span class="btn">전체보기</span>
+                    </li>
+                    <li>
+                        <span class="box_doc">
+                            <input type="checkbox" id="doc2">
+                            <label for="doc2">개인정보 수집 및 이용 동의</label>
+                        </span>
+                        <span class="btn">전체보기</span>
+                    </li>
+                    <li>
+                        <span class="box_doc">
+                            <input type="checkbox" id="doc3">
+                            <label for="doc3">취소 및 환불 규정</label>
+                        </span>
+                        <span class="btn">전체보기</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrap_certi">
+                <h2>본인인증</h2>
+                <ul class="list_certi">
+                    <li>
+                        <span class="box_certi">
+                            <label for="certi1"><span class="mark">*</span>연락처</label>
+                            <input type="text" id="certi1" value="" placeholder="휴대폰 번호를 입력해 주세요.">
+                        </span>
+                        <span class="btn btn1">인증번호 전송</span>
+                    </li>
+                    <li>
+                         <span class="box_certi">
+                            <label for="certi2"><span class="mark">*</span>제휴사 아이디</label>
+                            <input type="text" id="certi2" value="" placeholder="아이디를 입력해 주세요.">
+                        </span>
+                        <span class="btn btn2">확인</span>
+                    </li>
+                    <li>
+                         <span class="box_certi">
+                            <label for="certi3"><span class="mark">*</span>E-mail</label>
+                            <input type="text" id="certi1" value="" placeholder="CMS를 전송 전송받을 E-mail을 입력하세요.">
+                        </span>
+                        <span class="btn btn3">확인</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>전자계약서</h2>
+                <p class="txt_contact">
+                    아래  문서의 서명을 요청합니다.<br />
+                    문서 확인후 서명 가능일 이내에 서면해 주시기 바랍니다.<br />
+                    서명 후 상품 결제가 진행 됩니다.
+                </p>
+                <a href="#" class="btn_sign">문서 확인 후 서명하기</a>
+            </div>
+            <div class="box_payment">
+                <a href="#" class="btn_payment dis">결제하기</a>
+            </div>
+        </div>
+    </div>
+   <div id="footer">
+        <div class="inner">
+            <ul class="list_yakwan">        
+                <li><a href="">전자상거래 이용약관</a></li>
+                <li><a href="">개인정보 수집 및 이용 </a></li>
+                <li><a href="">취소 및 환불 규정</a></li>
+            </ul>
+            <ul class="info">
+                <li>(주)ㅇㅇㅇㅇ(대표이사 : 이 ㅇㅇ)</li>
+                <li>주소 : 대시 송파구 송파대로 570</li>
+                <li>사업자 등록번호 : 120-88-00767</li>
+                <li>통신판매업신고 : 2017-서울송파-0680</li>            
+            </ul>
+            <p class="copyright">Copyright ⓒ 2019 VMP. All Rights Reserved</p>
+        </div>
+    </div>
+    <div id="pop_yakwan">
+
+    </div>
+    <div class="pop_area">
+        <div class="wrap_pop sign1">
+            <p class="txt1">아이디 : 123456</p>
+            <p class="txt1">김*국</p>
+            <p class="txt2">님이 맞으신가요?</p>
+            <div class="btn_area">
+                <span class="btn btn_yes">예</span>
+                <span class="btn btn_no">아니요</span>
+            </div>
+        </div>
+        <div class="wrap_pop sign2">
+            <p>수신받을 수 없는 이메일 입니다.<br /> 이메일 주소를 확인해 주세요.</p>
+             <div class="btn_area">
+                <span class="btn btn_close">닫기</span>
+            </div>
+        </div>
+        <div class="wrap_pop sign3">
+            <p>이메일 확인 되었습니다.<br /> 계속 진행해 주세요.</p>
+             <div class="btn_area">
+                <span class="btn btn_confirm">확인</span>
+            </div>
+        </div>
+    </div>
+     <div class="pop_mask"></div>
+</body>
+</html>
