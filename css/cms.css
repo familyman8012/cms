@@ -10,7 +10,7 @@ html { font-family: 'Noto Sans KR', Helvetica, STHeiTi, Arial, sans-serif; -ms-t
 
 body { margin: 0; font-size: 1.4rem; overflow-x: hidden; min-width: 320px; /*-webkit-overflow-scrolling: touch;*/ color: #1a1a1a; background: #f9f9f9; }
 
-a { background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; color: #1a1a1a; -webkit-box-sizing: border-box; box-sizing: border-box; }
+a { background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; color: inherit; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 a:active { outline: 0; }
 
@@ -120,7 +120,7 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 #head { position: relative; height: 150px; text-align: center; }
 
-#head h1 { width: 1220px; margin: 0 auto; line-height: 150px; font-size: 62px; color: #56ceff; font-family: '옴니고딕', sans-serif; }
+#head h1 { width: 1220px; margin: 0 auto; line-height: 150px; font-size: 62px; color: #56ceff; font-family: '옴니고딕', sans-serif; cursor: pointer; }
 
 #head.sub { -webkit-box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22); box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22); }
 
@@ -357,7 +357,7 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 /* 팝업 */
 .pop_cms { width: 960px; }
 
-.pop_cms .head { position: relative; height: 80px; line-height: 80px; text-align: center; border-bottom: 1px solid #4d4d4d; }
+.pop_cms .head { position: relative; height: 80px; line-height: 80px; text-align: center; border-bottom: 1px solid #4d4d4d; font-size: 24px; }
 
 .pop_cms .head .btn_close { position: absolute; top: 10px; right: 10px; width: 20px; height: 20px; background: url("../images/btn_pop_close.png") no-repeat left top; cursor: pointer; }
 
@@ -367,7 +367,9 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 .pop_cms .bottom { display: -webkit-box; display: -ms-flexbox; display: flex; height: 219px; padding: 20px 30px 30px; background: #d8edf1; }
 
-.pop_cms .bottom .area_sign { display: block; width: 672px; height: 169px; line-height: 169px; font-size: 37px; color: #cbcbcb; text-align: center; background: #fff; }
+.pop_cms .bottom .clearButton { width: 130px; height: 32px; line-height: 32px; text-align: center; margin-top: 10px; color: #fff; font-size: 16px; background: #aaa; }
+
+.pop_cms .bottom .pad { display: block; width: 672px; height: 127px; background: #fff; }
 
 .pop_cms .bottom .btn_save { display: block; width: 199px; height: 169px; margin-left: 30px; font-size: 37px; line-height: 169px; text-align: center; color: #fff; cursor: pointer; background-color: #5a90b9; }
 
@@ -488,8 +490,9 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
   .pop_cms .head { height: 40px; line-height: 40px; }
   .pop_cms .cont { height: 100vh; padding: 9px 15px 8px; }
   .pop_cms .bottom { height: 178px; padding: 10px; }
-  .pop_cms .bottom .area_sign { width: 50%; height: 100%; line-height: 56px; }
-  .pop_cms .bottom .btn_save { width: calc(100% - 50% - 10px); height: auto; margin-left: 10px; }
+  .pop_cms .bottom .clearButton { margin-top: 5px; }
+  .pop_cms .bottom .pad { width: calc(80vw - 10px); height: 112px; }
+  .pop_cms .bottom .btn_save { width: 20%; height: 150px; line-height: 150px; margin-left: 10px; }
   .pop_cms.type2 .cont { height: calc(100vh - 218px); } }
 
 @media (max-width: 720px) { #head { height: 50px; }
@@ -499,5 +502,9 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
   .main_vis .main_vis_txt { position: relative; left: 0; top: 0; margin: 0 auto; width: 90%; padding-top: 10px; }
   #cont_main .list_product { margin: 0 auto 30px; }
   #cont_main .list_product li { float: none; width: 100%; margin: 0 0 30px; }
-  #cont_main .list_product .warning { height: auto; } }
+  #cont_main .list_product .warning { height: auto; }
+  .pop_cms .head { font-size: 16px; }
+  .pop_cms .bottom .pad { width: calc(100vw - 25px); }
+  .pop_cms .bottom .clearButton { margin-top: 10px; }
+  .pop_cms .bottom .btn_save { width: calc(100% - 166px); height: 32px; line-height: 32px; position: absolute; right: 15px; bottom: 13px; font-size: 20px; } }
 /*# sourceMappingURL=cms.css.map */

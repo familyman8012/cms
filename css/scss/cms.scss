@@ -3,7 +3,7 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;box-sizing: border-box; }html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;clear:both;}
 html { font-family: 'Noto Sans KR', Helvetica, STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; }
 body {margin:0;font-size: 1.4rem;overflow-x: hidden;min-width:320px; /*-webkit-overflow-scrolling: touch;*/color:#1a1a1a;background:#f9f9f9; }
-a { background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; color: #1a1a1a;box-sizing: border-box;  }
+a { background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; color: inherit; box-sizing: border-box;  }
 a:active { outline: 0; }
 a:active { color: #3990e6; }
 
@@ -96,7 +96,7 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
 #head {position:relative;
     height:150px;text-align:center;
     h1 {width:1220px;margin:0 auto;line-height: 150px;
-        font-size: 62px; color:#56ceff; font-family: '옴니고딕', sans-serif;
+        font-size: 62px; color:#56ceff; font-family: '옴니고딕', sans-serif; cursor: pointer;
     }
     &.sub {box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22);}
 }
@@ -300,7 +300,7 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
 
 /* 팝업 */
 .pop_cms {width:960px;
-    .head {position:relative;height:80px;line-height:80px;text-align:center;border-bottom:1px solid #4d4d4d;
+    .head {position:relative;height:80px;line-height:80px;text-align:center;border-bottom:1px solid #4d4d4d; font-size: 24px;
         .btn_close {
         position: absolute;top: 10px;right: 10px;width:20px;height:20px;background:url('../images/btn_pop_close.png') no-repeat left top;
         cursor: pointer;
@@ -317,15 +317,15 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
     .bottom {
         display:flex;
         height:219px;padding:20px 30px 30px;background:#d8edf1;
-        .area_sign {display:block;
-             width: 672px;height: 169px;line-height:169px;font-size:37px;color:#cbcbcb;text-align:center;background:#fff;
+        .clearButton {width:130px; height:32px; line-height: 32px; text-align: center; margin-top: 10px; color:#fff; font-size: 16px; background: #aaa;}
+        .pad {display:block;
+             width: 672px;height: 127px;background:#fff;
         }
         .btn_save {
             display:block;
-            width: 199px;
-  height: 169px;margin-left:30px;font-size: 37px;line-height:169px;
-  text-align:center;color:#fff;cursor:pointer;
-   background-color: #5a90b9;
+            width: 199px; height: 169px;margin-left:30px;font-size: 37px;line-height:169px;
+            text-align:center;color:#fff;cursor:pointer;
+            background-color: #5a90b9;
         }
     }
 }
@@ -497,9 +497,10 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
    .pop_cms {width:100%;top: 0%;left:0;transform:none;
         .head {height:40px;line-height:40px;}
         .cont {height:100vh;padding:9px 15px 8px;}
-        .bottom {height:178px;padding:10px;
-            .area_sign {width:50%;height:100%;line-height:56px;}
-            .btn_save {width:calc(100% - 50% - 10px);height:auto;margin-left:10px;}
+        .bottom {height:178px;padding:10px;   
+            .clearButton {margin-top: 5px;}         
+            .pad {width:calc(80vw - 10px);height:112px;}
+            .btn_save {width:20%;height:150px; line-height: 150px; margin-left:10px;}
         }
     }
     .pop_cms.type2 .cont {height:calc(100vh - 218px);
@@ -525,4 +526,14 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
 
         .warning {height:auto;}
     }
+
+    .pop_cms .head {font-size: 16px;}
+    .pop_cms .bottom {
+        .pad { width:calc(100vw - 25px); }
+        .clearButton {margin-top: 10px;}
+        .btn_save {
+            width:calc(100% - 166px); height:32px; line-height: 32px;
+            position: absolute; right:15px; bottom:13px; font-size: 20px;}
+    }
+    
 }

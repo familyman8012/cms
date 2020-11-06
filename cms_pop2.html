@@ -39,8 +39,19 @@
 
         </div>
         <div class="bottom">
-            <span class="area_sign">서명해주세요.</span>
+            <!-- <span class="area_sign">서명해주세요.</span>
             <span class="btn_save">
+                저장
+            </span> -->
+            <form method="post" name="sigPad" action="" onsubmit="return sign_success()" class="sigPad">
+                <div class="sig sigWrapper">
+                    <div class="typed"></div>
+                    <canvas class="pad" id="canvas"></canvas>
+                    <input type="hidden" name="output" class="output">
+                </div>
+                <div class="clearButton"><a href="#clear">지우기</a></div>
+            </form>
+            <span class="btn_save" id="save_sign">
                 저장
             </span>
         </div>
