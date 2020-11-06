@@ -152,7 +152,7 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 #cont_main .list_product .product_cont .pro_price .krwon_txt { font-size: 16px; letter-spacing: -0.4px; font-weight: 300; }
 
-#cont_main .list_product .product_cont .pro_intro { font-size: 16px; font-weight: 300; line-height: 1.48; color: #1a1a1a; }
+#cont_main .list_product .product_cont .pro_intro { font-size: 16px; line-height: 1.48; color: #1a1a1a; }
 
 #cont_main .list_product .warning { height: 68.8%; }
 
@@ -338,13 +338,13 @@ caption { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px
 
 #footer .list_yakwan li { width: 33.3%; border-right: 1px solid #c3c3c3; line-height: 12px; text-align: center; }
 
-#footer .list_yakwan li a { font-size: 12px; color: #c3c3c3; font-weight: 300; }
+#footer .list_yakwan li a { font-size: 12px; color: #c3c3c3; }
 
 #footer .list_yakwan li:nth-child(2) { width: 33.4%; }
 
 #footer .list_yakwan li:nth-child(3) { border-right: none; }
 
-#footer .info { margin: 0 0 30px; font-size: 12px; line-height: 1; letter-spacing: -0.3px; color: #c3c3c3; font-weight: 300; }
+#footer .info { margin: 0 0 30px; font-size: 12px; line-height: 1; letter-spacing: -0.3px; color: #c3c3c3; }
 
 #footer .info li { padding-bottom: 8px; }
 
