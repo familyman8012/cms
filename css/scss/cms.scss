@@ -77,6 +77,10 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
     src: url(../fonts/210-kookminB.woff) format('woff'),
     url(../fonts/210-kookminB.otf) format('opentype');}
 
+@font-face {font-family: '옴니고딕';font-style: normal;font-weight: 300;
+    src: url(../fonts/210-omnigothic-030.woff) format('woff'),
+    url(../fonts/210-omnigothic-030.otf) format('opentype');}
+
 
 /*commons*/
 .border_box{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -91,7 +95,9 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
 
 #head {position:relative;
     height:150px;text-align:center;
-    h1 {width:1220px;margin:0 auto;line-height: 150px;}
+    h1 {width:1220px;margin:0 auto;line-height: 150px;
+        font-size: 62px; color:#56ceff; font-family: '옴니고딕', sans-serif;
+    }
     &.sub {box-shadow: 0px 11px 29px 0 rgba(0, 0, 0, 0.22);}
 }
 
@@ -364,7 +370,7 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
      }
 
      #head {height:100px;
-        h1 {line-height:100px; 
+        h1 {line-height:100px; font-size: 40px;
             img {height:38px}
         }
     }
@@ -503,7 +509,7 @@ caption {position:absolute; left:-10000px; top:auto; width:1px; height:1px; over
 
 @media (max-width:720px) {
     #head {height:50px;
-        h1 {line-height:50px; 
+        h1 {line-height:50px; font-size: 26px;
             img {height:19px}
         }
     }
